@@ -30,7 +30,11 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".ts", "tsx", ".json"],
+    // alise: {
+    //   '@': resolve(__dirname,'../src')
+    // }
   },
+
   plugins: [
     new CleanWebpackPlugin({
       cleanAfterEveryBuildPatterns: [resolve(__dirname, "../dist")],
